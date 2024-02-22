@@ -212,6 +212,7 @@ h1 {
     #dismiss {
         margin-top:0;
         height: 3.7rem;
+        border-radius: 0.8rem;
     }
 
     .image-container-2 img {
