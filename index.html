@@ -38,7 +38,7 @@
                     <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                 </div>
 
-                <button id="change">Subscribe to monthly newsletter</button>
+                <button id="change" class="degrade">Subscribe to monthly newsletter</button>
 
             </div>
         </div>
@@ -48,12 +48,18 @@
         <!-- Success message start -->
 
         <div id="section-2">
-            <h1>Thanks for subscribing!</h1>
-        
-            <p>confirmation email has been sent to ash@loremcompany.com.</p>
-            <p>Please open it and click the button inside to confirm your subscription.</p>
-        
-            <button>Dismiss message</button>
+
+            <div class="image-container-2">
+                <img src="./assets/images/icon-success.svg" alt="Imagen de entrada">
+            </div>
+
+            <div class="text-container">
+                <h1 class="thanks">Thanks for subscribing!</h1>
+            
+                <p>Confirmation email has been sent to <span>ash@loremcompany.com.</span>
+                   Please open it and click the button inside to confirm your subscription.</p>
+            
+                <button id="dismiss" class="degrade">Dismiss message</button>
           </div>
 
         <!-- Success message end -->
@@ -67,16 +73,47 @@
       document.getElementById('section-2').style.display = 'block';
     });
 
-    window.addEventListener('resize', function() {
+    window.addEventListener('DOMContentLoaded', function() {
       if (window.innerWidth > 1024 || window.innerHeight > 1024) {
-        let imageContainer = document.querySelector('.image-container'); // Cambiado a .image-container
+        let imageContainer = document.querySelector('.image-container'); 
         imageContainer.querySelector('img').src = './assets/images/illustration-sign-up-desktop.svg';
       }
       else {
-        let imageContainer = document.querySelector('.image-container'); // Cambiado a .image-container
+        let imageContainer = document.querySelector('.image-container'); 
         imageContainer.querySelector('img').src = './assets/images/illustration-sign-up-mobile.svg';
       }
     });
+
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 1024 || window.innerHeight > 1024) {
+        let imageContainer = document.querySelector('.image-container'); 
+        imageContainer.querySelector('img').src = './assets/images/illustration-sign-up-desktop.svg';
+      }
+      else {
+        let imageContainer = document.querySelector('.image-container'); 
+        imageContainer.querySelector('img').src = './assets/images/illustration-sign-up-mobile.svg';
+      }
+    });
+
+    document.getElementById('email').addEventListener('input', function() {
+    let emailInput = this.value.trim();
+    let isValidGmail = isValidEmail(emailInput) && isGmail(emailInput);
+    if (!isValidGmail) {
+        this.classList.add('wrong');
+    } else {
+        this.classList.remove('wrong');
+    }
+    });
+
+    function isValidEmail(email) {
+        let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
+    function isGmail(email) {
+        return email.endsWith('@gmail.com');
+    }
+    
   </script>
 </body>
 </html>
