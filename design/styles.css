@@ -120,7 +120,7 @@ h1 {
 @media (min-width: 1025px), (min-height: 1025px) {
  
     * {
-        font-size: 1.38rem;
+        font-size: 1.2rem;
     }
 
     body {
@@ -131,34 +131,35 @@ h1 {
         display: flex;
         align-items: center;
         justify-content: center;
-        
     }
 
     .white-container {
         display: flex;
         flex-direction: row-reverse;
-        padding: 1rem;
+        padding: 2rem;
         background-color: white;
         box-shadow: 1 1 5rem rgba(0, 0, 0, 0.1);
-        border-radius: 3rem;
-        height: 60%;
-        width: 40%;
+        border-radius: 2.2rem;
+        height: 70%;
+        width:auto;
     }
     
     #section-1 {
         padding: 2.1rem;
         gap: 2.1rem;
+        justify-content:center
     }
     
     .image-container img {
-        width: 100%;
+        width: auto;
         height: 100%;
+        border-radius: 2rem;
     }
 
     #email{
         padding: 1.1rem;
         border-radius: 1.1rem;
-        height: 3.4rem;
+        height: 3.8rem;
     }
     
     label {
@@ -166,7 +167,7 @@ h1 {
     }
     
     #change{
-        height: 3.4rem;
+        height: 3.8rem;
         border-radius: 1.2rem;
     }
     
@@ -176,7 +177,7 @@ h1 {
     
     h1 {
         font-weight: 700;
-        font-size: 3.5rem;
+        font-size: 3.3rem;
     }
 
     li {
