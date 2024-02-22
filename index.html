@@ -15,12 +15,13 @@
   <!-- Sign-up form start -->
 
     <div class="container">
-        <div class="white-container">
+        <div id="new" class="white-container">
+
             <div class="image-container">
                 <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Imagen de entrada">
             </div>
 
-            <div id="section-1" class="section show">
+            <div id="section-1">
                 
                 <h1>Stay updated!</h1>
 
@@ -36,31 +37,34 @@
                     <label for="email">Email address:<br></label>
                     <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                 </div>
+
                 <button id="change">Subscribe to monthly newsletter</button>
 
             </div>
         </div>
+
+        <!-- Sign-up form end -->
+
+        <!-- Success message start -->
+
+        <div id="section-2">
+            <h1>Thanks for subscribing!</h1>
+        
+            <p>confirmation email has been sent to ash@loremcompany.com.</p>
+            <p>Please open it and click the button inside to confirm your subscription.</p>
+        
+            <button>Dismiss message</button>
+          </div>
+
+        <!-- Success message end -->
+
     </div>
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  <div id="section2" class="section hide">
-    <h1>Thanks for subscribing!</h1>
-
-    <p>confirmation email has been sent to ash@loremcompany.com.</p>
-    <p>Please open it and click the button inside to confirm your subscription.</p>
-
-    <button>Dismiss message</button>
-  </div>
-
-  <!-- Success message end -->
   
   <script>
+    document.getElementById('section-2').style.display = 'none';
     document.getElementById('change').addEventListener('click', function() {
-    document.getElementById('section1').style.display = 'none';
-    document.getElementById('section2').style.display = 'block';
+      document.getElementById('new').style.display = 'none';
+      document.getElementById('section-2').style.display = 'block';
     });
   </script>
 </body>
