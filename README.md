@@ -3,7 +3,7 @@
 
 ## Link
 
-ttps://dsaw-2024-1.github.io/parcial-sobre-4-MariSalas23/
+https://dsaw-2024-1.github.io/parcial-sobre-4-MariSalas23/
 
 ## HTML, CSS y JavaScript
 
