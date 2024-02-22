@@ -59,6 +59,12 @@ label {
     font-weight: 700;
 }
 
+#change:hover {
+    background-image: linear-gradient(to right, hsl(347, 100%, 63%), hsl(12, 100%, 63%));
+    border-color: hsl(347, 100%, 63%);
+    box-shadow: 0px 14px 18px hsla(347, 100%, 63%, 0.5);
+}
+
 .last {
     display: flex;
     flex-direction: column;
