@@ -35,7 +35,7 @@
 }
 
 ul {
-    margin-left: 1.5rem;
+    margin-left: 1.8rem;
     list-style-image: url('../assets/images/icon-list.svg');
 }
 
@@ -144,7 +144,7 @@ h1 {
         flex-direction: row-reverse;
         padding: 2rem;
         background-color: white;
-        box-shadow: 1 1 5rem rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 14px 18px hsla(0, 0%, 0%, 0.5);
         border-radius: 2.2rem;
         height: 70%;
         width:auto;
@@ -160,12 +160,13 @@ h1 {
         width: auto;
         height: 100%;
         border-radius: 2rem;
+        margin-left: 1.5rem;
     }
 
     #email{
         padding: 1.1rem;
-        border-radius: 1.1rem;
-        height: 3.8rem;
+        border-radius: 0.8rem;
+        height: 3.9rem;
     }
     
     label {
@@ -173,8 +174,8 @@ h1 {
     }
     
     #change{
-        height: 3.8rem;
-        border-radius: 1.2rem;
+        height: 3.9rem;
+        border-radius: 0.8rem;
     }
     
     .last {

@@ -18,7 +18,7 @@
         <div id="new" class="white-container">
 
             <div class="image-container">
-                <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Imagen de entrada">
+                <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Imagen de entrada">
             </div>
 
             <div id="section-1">
@@ -65,6 +65,17 @@
     document.getElementById('change').addEventListener('click', function() {
       document.getElementById('new').style.display = 'none';
       document.getElementById('section-2').style.display = 'block';
+    });
+
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 1024 || window.innerHeight > 1024) {
+        let imageContainer = document.querySelector('.image-container'); // Cambiado a .image-container
+        imageContainer.querySelector('img').src = './assets/images/illustration-sign-up-desktop.svg';
+      }
+      else {
+        let imageContainer = document.querySelector('.image-container'); // Cambiado a .image-container
+        imageContainer.querySelector('img').src = './assets/images/illustration-sign-up-mobile.svg';
+      }
     });
   </script>
 </body>
