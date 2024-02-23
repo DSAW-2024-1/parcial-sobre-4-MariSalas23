@@ -81,6 +81,7 @@ h1 {
 
 .thanks {
     padding-top: 15%;
+    padding-bottom: 5%
 }
 
 #dismiss {
@@ -195,12 +196,14 @@ h1 {
 
     .thanks {
         margin-top: 0;
+        padding-top: 5%;
+        padding-bottom: 0;
     }
     
     #section-1 {
         padding: 2.1rem;
         gap: 2.1rem;
-        justify-content:center
+        justify-content:center;
     }
 
     #section-2 {
@@ -211,7 +214,7 @@ h1 {
     }
 
     .text-container {
-        gap: 2.2rem;
+        gap: 2.5rem;
     }
 
     #dismiss {
