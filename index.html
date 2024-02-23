@@ -60,9 +60,7 @@
             
                 <button id="dismiss" class="degrade">Dismiss message</button>
           </div>
-
         <!-- Success message end -->
-
     </div>
   
     <script>
@@ -108,7 +106,7 @@
         });
 
         document.getElementById('change').addEventListener('click', function() {
-        let emailInput = document.getElementById('email').value.trim(); // Obtener el valor del correo electrónico
+        let emailInput = document.getElementById('email').value.trim();
         let isValidGmail = isValidEmail(emailInput) && isGmail(emailInput);
         if (isValidGmail) {
             document.getElementById('right-email').textContent = emailInput;
