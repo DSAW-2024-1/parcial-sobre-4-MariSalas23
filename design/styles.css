@@ -215,6 +215,7 @@ h1 {
         padding: 3.5rem;
         height: 35rem;
         width: 35rem;
+        box-shadow: 5px 14px 18px hsla(0, 0%, 0%, 0.5);
     }
 
     .text-container {
