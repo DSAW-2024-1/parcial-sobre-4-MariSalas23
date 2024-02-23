@@ -49,6 +49,10 @@ ul {
     list-style-image: url('../assets/images/icon-list.svg');
 }
 
+li {
+    padding-bottom: 0.5rem;
+}
+
 #email{
     padding: 1rem;
     border-radius: 0.5rem;
