@@ -34,7 +34,9 @@ markdown
 
 | Criterio                   | Puntaje |
 | -------------------------- | ------- |
-| Diseño Responsive          | 2       |
-| HTML Semántico             | 1       |
-| Funcionalidad              | 1.5     |
-| Despliegue en Github Pages | 0.5     |
+| Diseño Responsive          | 1/2       |
+| HTML Semántico             | 0.8/1       |
+| Funcionalidad              | 0/1.5     |
+| Despliegue en Github Pages | 0.5/0.5     |
+
+Nota parcial: 3.7 x 0.8 -> 1.84
